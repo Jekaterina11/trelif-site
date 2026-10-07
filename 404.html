@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The requested TreLif page could not be found.">
+<meta name="theme-color" content="#faf7fc">
+<title>Page not found — TreLif</title>
+<script>
+// Missing URLs may be nested: resolve the project base before loading CSS.
+const siteBase = location.hostname.endsWith('.github.io')
+  ? '/' + location.pathname.split('/').filter(Boolean)[0] + '/'
+  : '/';
+const base = document.createElement('base');
+base.href = siteBase;
+document.head.append(base);
+</script>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header wrap"><a class="wordmark" href="./" aria-label="TreLif home">TreLif<span class="brand-dot" aria-hidden="true">.</span></a><nav aria-label="Main navigation"><a href="./">Home</a><a href="./privacy/">Privacy</a><a href="./support/">Support</a></nav></header>
+<main id="main"><section class="page-heading wrap narrow error-page"><p class="eyebrow">PAGE NOT FOUND</p><h1>A little off path.</h1><p>We couldn’t find that page. Return to TreLif or contact us for help.</p><a class="button" href="./">Back to TreLif</a></section></main>
+<footer class="site-footer wrap"><div><a class="wordmark" href="./">TreLif</a><p>A little care. Every day.</p></div><nav aria-label="Footer navigation"><a href="./privacy/">Privacy Policy</a><a href="./support/">Support</a><a href="mailto:support@trelif.app">support@trelif.app</a></nav><p class="copyright">© 2026 TreLif</p></footer>
+</body>
+</html>
