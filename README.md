@@ -9,11 +9,11 @@ A calm, responsive static website for the TreLif iOS/watchOS wellness app, with 
 - `support/index.html`: support email and FAQ.
 - `404.html`: custom page-not-found page.
 - `assets/css/style.css`: shared responsive styles, using system fonts.
-- `assets/images/README.md`: official logo handoff instructions.
+- `assets/images/README.md`: official logo usage notes.
 
-## Logo pending
+## Official logo
 
-The official logo is not in this repository. Supply it at **`assets/images/trelif-logo.png`**. No substitute logo was generated. The current header uses the plain product name, with no missing-image request.
+The supplied official logo is at **`assets/images/trelif-logo.png`**. Its original 1024 × 1024 PNG bytes are preserved. Every page header displays the complete image as a home link, with `alt="TreLif"`, at 64 pixels wide on tablet and desktop and 56 pixels wide on mobile. Automatic height preserves its square aspect ratio. The logo includes the brand name, so the header does not repeat it as separate text. Relative image paths support GitHub Pages and a future root domain.
 
 ## Hosting and local review
 

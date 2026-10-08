@@ -1,5 +1,5 @@
 # Official TreLif logo
 
-The official logo was not present when this website was created. Copy the supplied official image to `assets/images/trelif-logo.png`. No replacement logo has been generated.
+`trelif-logo.png` is the supplied official TreLif logo: a 1024 × 1024 PNG without an alpha channel. Preserve this original file without cropping, recoloring or other alterations.
 
-The site currently displays the product name as ordinary text and does not request a missing image. After the official file is supplied, it can replace the header text with an image using appropriate alt text and explicit dimensions.
+All page headers display the complete image with `alt="TreLif"` inside a home link. CSS sets a width of 64 pixels on tablet and desktop and 56 pixels on mobile, with automatic height to preserve the aspect ratio. No duplicate brand text appears beside it.
