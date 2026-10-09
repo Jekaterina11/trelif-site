@@ -6,7 +6,10 @@
 <meta name="description" content="Your everyday space for movement, nutrition and personal progress. Discover TreLif, Lifee and Life Tree.">
 <meta name="theme-color" content="#faf7fc">
 <title>TreLif — Your everyday wellness space</title>
-<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/style.css?v=lifee-portrait-v2-1">
+<script src="./assets/js/lifee-awakening.js?v=lifee-portrait-v2-1" defer></script>
+<script src="./assets/js/lifee-voice.js?v=lifee-portrait-v2-1" defer></script>
+<script src="./assets/js/lifee-alive.js?v=lifee-portrait-v2-1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -27,8 +30,26 @@
     </div>
     <figure class="lifee-artwork">
       <div class="lifee-visual">
-        <img class="lifee-image" src="assets/images/lifee-web-clean.png" alt="Lifee, the TreLif companion, with a glowing face and blue eyes" width="1278" height="1230" loading="eager" decoding="async">
+        <div class="lifee-stage">
+        <img class="lifee-image" src="assets/images/lifee-portrait-v2.png" alt="Lifee, the TreLif companion, with a glowing face and blue eyes" width="1302" height="1208" loading="eager" decoding="async">
+        <canvas class="lifee-particles" aria-hidden="true" hidden></canvas>
+        <canvas class="lifee-body" aria-hidden="true" hidden></canvas>
+        <canvas class="lifee-face" aria-hidden="true" hidden></canvas>
+        <canvas class="lifee-alive" aria-hidden="true" hidden></canvas>
+        <button class="lifee-awaken" type="button" hidden aria-label="Awaken Lifee"><span>Tap to awaken Lifee</span></button>
+        </div>
       </div>
+      <div class="lifee-controls" hidden><button class="lifee-replay" type="button" hidden>Replay</button><span class="lifee-status" role="status" aria-live="polite"></span></div>
+      <div class="lifee-voice-controls" hidden>
+        <div class="lifee-languages" role="group" aria-label="Lifee introduction language">
+          <button type="button" data-language="en" lang="en" aria-label="English introduction" aria-pressed="true">EN</button>
+          <button type="button" data-language="lv" lang="lv" aria-label="Latvian introduction" aria-pressed="false">LV</button>
+          <button type="button" data-language="ru" lang="ru" aria-label="Russian introduction" aria-pressed="false">RU</button>
+        </div>
+        <button class="lifee-mute" type="button" aria-label="Mute Lifee introduction" aria-pressed="false">Mute</button>
+        <button class="lifee-play-voice" type="button" hidden>Play introduction</button>
+      </div>
+      <span class="lifee-voice-status lifee-status" role="status" aria-live="polite"></span>
       <figcaption class="lifee-caption">Lifee · Your TreLif companion</figcaption>
     </figure>
   </div>

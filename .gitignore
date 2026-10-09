@@ -1,0 +1,23 @@
+# Local metadata, temporary browser tooling and review captures
+.DS_Store
+/.lifee-*-test/
+/previews/
+
+# Unused local image variants (preserved on disk)
+/assets/images/lifee-1.png
+/assets/images/lifee-final.png
+/assets/images/lifee-last.png
+/assets/images/lifee-lavender.png
+/assets/images/lifee-main.png
+/assets/images/lifee-silhouette.png
+/assets/images/lifee-warm.png
+/assets/images/lifee-web.png
+/assets/images/lifee.png
+/assets/images/trelif-logo-web.png
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
