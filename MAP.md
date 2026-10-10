@@ -247,3 +247,15 @@ Known limitations: eyelids are procedural approximations from a single open-eye 
 Future Lip Sync: NOT implemented. A later separately authorized phase needs approved mouth/viseme animation assets or a facial rig and timing integration; this checkpoint adds no mouth animation or lip-sync dependency.
 
 The stable reference is the annotated tag. Working tree cleanliness is verified after commit/tag creation; local ignored review assets are not checkpoint dependencies.
+
+## APPROVED CHECKPOINT — Lifee title styling (Lifee 2.1)
+
+The name treatment replaces the small caption with a centered, prominent “Lifee” and the smaller subtitle “Your AI companion”, in the same caption position below the portrait controls. The existing system font maintains TreLif's identity; name size is responsive 28–34px, weight 600, with restrained letter spacing and rich muted violet `#59356f`. Subtitle uses 13px type and `#69516f`. Both colors exceed 4.5:1 contrast against the section's lavender and pink endpoints.
+
+The name fades in over 700ms after Awakening reaches its completed state, with no transform or interaction changes. Reduced motion disables the transition through the existing global rule. Static/no-JavaScript fallback keeps the name visible. Browsers without CSS `:has()` retain a readable static caption. The stylesheet URL is versioned `?v=lifee-name-1` for preview refresh.
+
+The PNG, blinking/breathing/neural effects, audio scripts/recordings, native language/Replay/mute controls, hero and surrounding layout rules remain unchanged. Only caption markup, scoped CSS and documentation were changed. The user approved this name treatment on 10 October 2026. Local commit: `checkpoint: approved Lifee title styling`; annotated tag: `lifee-v2.1-approved`, on `feature/lifee-awakening`. The existing `lifee-v2-approved` tag is preserved unchanged. No push or deployment is performed.
+
+Validation: rendered Firefox checks at 320, 390 and 1440px cover caption readability, fade-in, keyboard Awakening, absence of portrait overlap and horizontal overflow, with no JavaScript errors. Color contrast was calculated for both background endpoints. Review captures are local ignored files in `previews/lifee-name/`. Actual Safari/iPhone verification remains manual.
+
+Checkpoint verification: reviewed the complete three-file diff; confirmed the Lifee title/subtitle markup and scoped typography/fade rules. JavaScript syntax and Git whitespace checks passed. Portraits, animation scripts and recordings are byte-identical to the preceding approved checkpoint. Only `index.html`, `assets/css/style.css` and `MAP.md` are included in this title checkpoint.

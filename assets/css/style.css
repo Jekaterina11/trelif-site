@@ -54,3 +54,10 @@
 .lifee-stage[data-body-motion="true"][data-state="complete"] .lifee-image{clip-path:inset(0 0 23% 0)}
 .lifee-stage .lifee-awaken{z-index:3}
 @media(prefers-reduced-motion:reduce){.lifee-stage[data-body-motion] .lifee-image{clip-path:none}.lifee-body,.lifee-face{display:none!important}}
+
+/* Character name treatment: same system typography, richer muted violet. */
+.lifee-caption{color:#59356f;line-height:1.35}
+.lifee-name{display:block;font-size:clamp(28px,3vw,34px);font-weight:600;letter-spacing:-0.8px}
+.lifee-name-subtitle{display:block;margin-top:3px;font-size:13px;letter-spacing:0.2px;color:#69516f}
+.lifee-visual:has(.lifee-stage[data-state]) ~ .lifee-caption{opacity:0}
+.lifee-visual:has(.lifee-stage[data-state="complete"]) ~ .lifee-caption{opacity:1;transition:opacity 700ms ease}
